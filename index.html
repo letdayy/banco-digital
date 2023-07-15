@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <a href="/pages/login.html">login</a>
+    <section id="conta-corrente">
+      <h2>Conta Corrente</h2>
+      <span>Número: <span id="cc-numero"></span></span>
+      <span>Saldo: <span id="cc-saldo"></span></span>
+      <span>Limite Cheque Especial: <span id="cc-limite"></span></span>
+      <input type="number" id="cc-deposito" placeholder="Valor do depósito">
+      <button onclick="realizarDepositoCorrente()">Depositar</button>
+      <input type="number" id="cc-saque" placeholder="Valor do saque">
+      <button onclick="realizarSaqueCorrente()">Sacar</button>
+    </section>
+    <section id="conta-poupanca">
+      <h2>Conta Poupança</h2>
+      <span>Número: <span id="cp-numero"></span></span>
+      <span>Saldo: <span id="cp-saldo"></span></span>
+      <input type="number" id="cp-deposito" placeholder="Valor do depósito">
+      <button onclick="realizarDepositoPoupanca()">Depositar</button>
+    </section>
+</main>
+</body>
+</html>

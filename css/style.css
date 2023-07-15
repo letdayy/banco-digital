@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 100vh;
+  }
+
+  .container section {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .container section span {
+    display: block;
+    font-weight: bold;
+  }
+
+  .container section input {
+    margin-bottom: 5px;
+  }
+
+  .container section button {
+    margin-top: 5px;
+  }

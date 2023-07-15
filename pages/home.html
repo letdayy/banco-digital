@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="../js/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="icon" src="../img/search.png" alt="pesquisa" />
+      <div>
+        <div class="home-circle">L</div>
+        <h1>Olá Letícia</h1>
+        <p>Bem-vinda de volta</p>
+      </div>
+      <img class="icon" src="../img/notification.png" alt="" />
+    </header>
+    <main>
+      <img src="../img/container-value.svg" alt="" />
+      <div class="container">
+        <h3>Conta Corrente</h3>
+        <p class="value">R$ 500,00</p>
+        <span>Número: <span id="cc-numero"></span></span>
+        <span>Saldo: <span id="cc-saldo"></span></span>
+        <span>Limite Cheque Especial: <span id="cc-limite"></span></span>
+      </div>
+      
+      <div class="inputs">
+        <input type="number" id="cc-deposito" placeholder="Valor do depósito" />
+        <input type="number" id="cc-saque" placeholder="Valor do pagamento" />
+      </div>
+      <ul class="options">
+        <li>
+          <button onclick="loading()">
+            <img src="../img/pix.svg" alt="" />
+            Pix
+          </button>
+        </li>
+        <li>
+          <button onclick="realizarSaqueCorrente()">
+            <img src="../img/pay.svg" alt="" />
+            Pagar
+          </button>
+        </li>
+        <li>
+          <button onclick="realizarDepositoCorrente()">
+            <img src="../img/deposit.svg" alt="" />
+            Depositar
+          </button>
+        </li>
+        <li>
+          <button onclick="loading()">
+            <img src="../img/transfer.svg" alt="" />
+            Transferir
+          </button>
+        </li>
+      </ul>
+      <div class="container">
+        <h3>Conta Poupança</h3>
+        <span>Número: <span id="cp-numero"></span></span>
+        <span>Saldo: <span id="cp-saldo"></span></span>
+      </div>
+      <div class="inputs">
+        <input type="number" id="cc-deposito" placeholder="Valor do depósito" />
+        <input type="number" id="cc-saque" placeholder="Valor do pagamento" />
+      </div>
+      <ul class="options">
+        <li>
+          <button onclick="loading()">
+            <img src="../img/pix.svg" alt="" />
+            Pix
+          </button>
+        </li>
+        <li>
+          <button onclick="realizarSaqueCorrente()">
+            <img src="../img/pay.svg" alt="" />
+            Pagar
+          </button>
+        </li>
+        <li>
+          <button onclick="realizarDepositoPoupanca()">
+            <img src="../img/deposit.svg" alt="" />
+            Depositar
+          </button>
+        </li>
+        <li>
+          <button onclick="loading()">
+            <img src="../img/transfer.svg" alt="" />
+            Transferir
+          </button>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <ul class="container footer">
+        <li>
+          <img src="../img/home.svg" alt="" />
+        </li>
+        <li>
+          <img src="../img/wallet.svg" alt="" />
+        </li>
+        <li>
+          <img src="../img/config.svg" alt="" />
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
