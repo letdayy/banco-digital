@@ -25,11 +25,12 @@ Foi feito um exemplo de aplicativo mobile que realiza depósito e saque nas cont
 1. Utilize a extensão Live Server do VS Code para uma melhor visualização do projeto.
   
 
-<br><br>
-<p align="center">Desenvolvido por Letícia Dayane</p>
-
 ## 📖 Referências utilizadas:
 
 https://www.figma.com/file/rh8CMYVy27QEkvgkRT9bt7/APP-Banco-Digital-(Community)?node-id=11%3A125&mode=dev
 
 https://www.figma.com/file/3iGMq7Ih3XM06YXP7G1w37/BANCO-DIGITAL---Portifólio---Home%2C-Cartão-virtual-(Community)?type=design&node-id=1-4&mode=design&t=mBx1OvKP43AC7H3m-0
+
+
+<br><br>
+<p align="center">Desenvolvido por Letícia Dayane</p>
