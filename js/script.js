@@ -36,10 +36,17 @@ class ContaCorrente extends Conta {
 }
 
 class ContaPoupanca extends Conta {
-  calcularJuros(taxa) {
-    const juros = this.saldo * taxa;
-    this.saldo += juros;
-    alert(`Juros de ${juros} aplicados na conta poupança ${this.numero}`);
+  constructor(numero, saldo) {
+    super(numero, saldo);
+  }
+
+  sacar(valor) {
+    if (valor <= this.saldo) {
+      this.saldo -= valor;
+      alert(`Saque de ${valor} realizado na conta poupança ${this.numero}`);
+    } else {
+      alert(`Saldo insuficiente na conta poupança ${this.numero}`);
+    }
   }
 }
 
@@ -81,6 +88,15 @@ function realizarDepositoPoupanca() {
     contaPoupanca.depositar(valor);
     document.getElementById('cp-saldo').textContent = contaPoupanca.saldo;
     document.getElementById('cp-deposito').value = '';
+  }
+}
+
+function realizarSaquePoupanca() {
+  const valor = parseFloat(document.getElementById('cp-saque').value);
+  if (!isNaN(valor)) {
+    contaPoupanca.sacar(valor);
+    document.getElementById('cp-saldo').textContent = contaPoupanca.saldo;
+    document.getElementById('cp-saque').value = '';
   }
 }
 
